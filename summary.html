@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Summary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body><center><div class="ten">
+  <div class="four">
+    <h3>Dashboard Summary</h3>
+    <p>Total Products: <span id="total-products"></span></p>
+    <p>Inventory Value: ₹<span id="inventory-value"></span></p>
+    <p>Soon Expiring Items: <span id="soon-expiring"></span></p>
+    <a href="dashboard.html"><button>🔙 Back</button></a>
+  </div></div></center>
+  <div id="toast" class="toast"></div>
+  
+  <script src="script.js"></script>
+  <script>
+    displaySummary(); // call on load
+  </script>
+</body>
+</html>

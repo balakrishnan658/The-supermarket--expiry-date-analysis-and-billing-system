@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>View Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body><center><div class="eg">
+  <div class="tree">
+    <h3>View Products</h3>
+    <input type="text" id="search" placeholder="Search by name..." oninput="filterProducts()" />
+    <table border="1" width="100%" id="product-table">
+      <thead>
+        <tr>
+          <th>id</th><th>Name</th><th>Price</th><th>Qty</th><th>Expiry</th><th>Status</th><th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="product-list"></tbody>
+    </table>
+    <a href="dashboard.html"><button>🔙 Back</button></a>
+  </div></div></center>
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+  <script>
+    displayProducts(); // Call it directly when page loads
+  </script>
+</body>
+</html>

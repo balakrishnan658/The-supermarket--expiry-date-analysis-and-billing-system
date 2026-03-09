@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Main Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body><center>
+  <div class="five">
+  <div class="two">
+  <h2>The Supermarket Expiry Date Analysis And Billing System</h2>
+    <div class="nav-buttons">
+      <a href="add.html"><button>➕ Add products</button></a>
+      <a href="view.html"><button>📦 View Products</button></a>
+      <a href="billing.html"><button>🧾 Billing</button></a>
+      <a href="summary.html"><button>📊 Summary</button></a>
+      <button onclick="DarkMode()">🌓 Theme</button>
+      <button onclick="logout()" class="logout">🚪 Logout</button>
+      <button onclick="exportCSV()">📁 Export CSV</button>
+      
+    </div></div></div></center>
+    <input type="text" id="search-box" placeholder="Search product" onkeyup="searchProduct()" />
+    <ul id="search-results"></ul>
+    <div id="billing-section"></div>
+   
+    
+  <div id="toast" class="toast"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html> 
+
